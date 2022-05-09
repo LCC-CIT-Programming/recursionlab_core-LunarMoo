@@ -6,7 +6,16 @@ namespace FibonacciNumbers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            for (int n = 0; n <= 12; n++)
+                Console.WriteLine(Fib(n));
+        }
+        static int Fib(int n)
+        {
+            if (n <= 1)
+                return n;
+            else
+                return Fib(n - 1) + Fib(n - 2);
+
         }
     }
 }
