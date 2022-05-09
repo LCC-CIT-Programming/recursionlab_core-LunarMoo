@@ -6,6 +6,7 @@ namespace Mulitplication
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(multiply(5,3));
             Console.WriteLine("Multiply");
             for (int n = 1; n <= 10; n++)
                 Console.WriteLine(String.Format("5 * {0,2} is {1,2}", n, multiply(5, n)));
